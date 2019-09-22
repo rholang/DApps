@@ -43,7 +43,7 @@ jobs:
           name: Deploying to GitHub Pages
           command: |
             cd website
-            yarn && yarn run docusaurus-write-translations
+            sudo yarn && sudo yarn run docusaurus-write-translations
             # install Crowdin
             sudo apt-get update
             sudo apt-get install default-jre
