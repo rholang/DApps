@@ -54,11 +54,7 @@ jobs:
             sudo dpkg -i crowdin.deb
             sleep 5
             # upload translation strings and download translations
-            export CROWDIN_DOCUSAURUS_PROJECT_ID="rholang"
-            export CROWDIN_DOCUSAURUS_API_KEY=$RHOLANG_CROWDIN_API_KEY
-            crowdin --config ../crowdin.yaml upload sources --auto-update -b master
-            crowdin --config ../crowdin.yaml download -b master
-            GIT_USER=rholang USE_SSH=false yarn run docusaurus-publish
+            
 # Workflows enables us to run multiple jobs in parallel
 workflows:
   version: 2
