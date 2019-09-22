@@ -27,7 +27,7 @@ jobs:
   deploy-website:
     docker:
       - image: circleci/node:10
-
+    working_directory: ~/repo
     steps:
       - checkout
       - restore-cache: *restore-yarn-cache
