@@ -27,7 +27,10 @@ jobs:
   deploy-website:
     docker:
       - image: circleci/node:10
-    working_directory: ~/repo
+    environment:
+      # change the npm config to avoid using sudo
+      NPM_CONFIG_PREFIX: ~/.npm-global
+      BITSRC_ENV: stg
     steps:
       - checkout
       - restore-cache: *restore-yarn-cache
