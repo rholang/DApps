@@ -1,9 +1,0 @@
-/node_modules/
-/build/
-/translated_docs/
-/i18n/
-!/i18n/en.json
-
-# added by the bucklescript repl.js script. See README.md "Build the Playground"
-playground/bs/exports.js
-playground/bs/pre_load.js
