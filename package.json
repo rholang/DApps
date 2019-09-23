@@ -42,7 +42,7 @@
     "test": "validate_sources",
     "clean": "rm -rf data/generated",
     "update-sources": "git submodule update --remote && validate_sources",
-    "fetch": "npm run clean && npm run update-sources && fetch_published && fetch_unpublished",
+    "fetch": " npm run update-sources && fetch_published && fetch_unpublished",
     "update-search-index": "NODE_ENV=production update_search_index",
     "deploy": "npm run update-search-index && gh-pages -d public -b master",
     "everything": "npm run fetch && npm run build && npm run deploy"
