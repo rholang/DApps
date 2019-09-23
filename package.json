@@ -44,7 +44,7 @@
     "update-sources": "git submodule update --remote && validate_sources",
     "fetch": "npm run update-sources && fetch_published && fetch_unpublished",
     "update-search-index": "update_search_index",
-    "deploy": "gh-pages -d public -b source --remote master",
+    "deploy": "gh-pages -d public -b source --r master",
     "docu-build": "docusaurus-build",
     "everything": "npm run fetch && npm run build "
   },
