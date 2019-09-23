@@ -1,9 +1,0 @@
-{
-  "name": "redex-data",
-  "scripts": {
-    "test": "validate_sources sources.json"
-  },
-  "devDependencies": {
-    "redex-scripts": "redex/redex-scripts"
-  }
-}
