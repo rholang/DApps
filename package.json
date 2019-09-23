@@ -44,7 +44,7 @@
     "update-sources": "git submodule update --remote && validate_sources",
     "fetch": " npm run update-sources && fetch_published && fetch_unpublished",
     "update-search-index": "NODE_ENV=production update_search_index",
-    "deploy": "npm run update-search-index && gh-pages -d public -b master",
+    "deploy": "npm run update-search-index && gh-pages -d public -b source",
     "everything": "npm run fetch && npm run build && npm run deploy"
   },
   "devDependencies": {
