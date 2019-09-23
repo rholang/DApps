@@ -1,0 +1,59 @@
+{
+  "name": "redex",
+  "description": "redex - Reason package index",
+  "version": "1.0.0",
+  "author": "glennsl",
+  "dependencies": {
+    "@glennsl/bs-json": "^2.0.0",
+    "@glennsl/rebase": "^0.2.1",
+    "algoliasearch": "^3.30.0",
+    "algoliasearch-helper": "^2.26.1",
+    "bs-typed-glamor": "github:glennsl/bs-typed-glamor",
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
+    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-glamor": "^1.6.13",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-json": "^1.0.20",
+    "glamor-reset": "^3.0.0-3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^2.2.7",
+    "react-timeago": "^4.1.9",
+    "remark": "^9.0.0",
+    "remark-html": "^7.0.0",
+    "vrroom": "github:glennsl/vrroom"
+  },
+  "keywords": [
+    "reason",
+    "reasonml",
+    "package index",
+    "repository"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "start": "bsb -make-world -w",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "test": "validate_sources",
+    "clean": "rm -rf data/generated",
+    "update-sources": "git submodule update --remote && validate_sources",
+    "fetch": "npm run update-sources && fetch_published && fetch_unpublished",
+    "update-search-index": "NODE_ENV=production update_search_index",
+    "deploy": "npm run update-search-index && gh-pages -d public -b master",
+    "everything": "npm run fetch && npm run build "
+  },
+  "devDependencies": {
+    "bs-platform": "^3.1.5",
+    "gh-pages": "^1.2.0",
+    "github-slugger": "^1.2.0",
+    "mdast-util-to-string": "^1.0.4",
+    "reason": "^3.1.0",
+    "reason-react": "^0.4.2",
+    "redex-scripts": "redex/redex-scripts"
+  }
+}
