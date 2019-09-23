@@ -48,11 +48,12 @@
     "everything": "npm run fetch && npm run build "
   },
   "devDependencies": {
-    "docusaurus": "^1.8.1",
     "bs-platform": "^3.1.5",
+    "docusaurus": "^1.13.0",
     "gh-pages": "^1.2.0",
     "github-slugger": "^1.2.0",
     "mdast-util-to-string": "^1.0.4",
+    "publish-gh-pages": "0.0.1",
     "reason": "^3.1.0",
     "reason-react": "^0.4.2",
     "redex-scripts": "redex/redex-scripts"
