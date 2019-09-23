@@ -48,6 +48,7 @@
     "everything": "npm run fetch && npm run build "
   },
   "devDependencies": {
+    "docusaurus": "^1.8.1",
     "bs-platform": "^3.1.5",
     "gh-pages": "^1.2.0",
     "github-slugger": "^1.2.0",
