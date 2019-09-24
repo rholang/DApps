@@ -4,6 +4,27 @@
   "version": "1.0.0",
   "author": "glennsl",
   "homepage": "https://rholang.github.io/",
+  "keywords": [
+    "reason",
+    "reasonml",
+    "package index",
+    "repository"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "start": "bsb -make-world -w",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "test": "validate_sources",
+    "clean": "rm -rf data/generated",
+    "update-sources": "git submodule update --remote && validate_sources",
+    "fetch": "npm run update-sources && fetch_published && fetch_unpublished",
+    "update-search-index": "update_search_index",
+    "deploy": "gh-pages -b master -d public",
+    "docu-build": "docusaurus-build",
+    "everything": "npm run fetch && npm run build "
+  },
   "dependencies": {
     "@glennsl/bs-json": "^2.0.0",
     "@glennsl/rebase": "^0.2.1",
@@ -27,27 +48,6 @@
     "remark": "^9.0.0",
     "remark-html": "^7.0.0",
     "vrroom": "github:glennsl/vrroom"
-  },
-  "keywords": [
-    "reason",
-    "reasonml",
-    "package index",
-    "repository"
-  ],
-  "license": "MIT",
-  "main": "n/a",
-  "scripts": {
-    "start": "bsb -make-world -w",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "test": "validate_sources",
-    "clean": "rm -rf data/generated",
-    "update-sources": "git submodule update --remote && validate_sources",
-    "fetch": "npm run update-sources && fetch_published && fetch_unpublished",
-    "update-search-index": "update_search_index",
-    "deploy": "gh-pages -b master -d public",
-    "docu-build": "docusaurus-build",
-    "everything": "npm run fetch && npm run build "
   },
   "devDependencies": {
     "bs-platform": "^3.1.5",
