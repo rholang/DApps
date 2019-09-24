@@ -23,7 +23,7 @@
     "update-search-index": "update_search_index",
     "deploy": "gh-pages -b master -d public",
     "docu-build": "docusaurus-build",
-    "everything": "npm run fetch && npm run build "
+    "everything": "npm run fetch && npm run build && npm run deploy"
   },
   "dependencies": {
     "@glennsl/bs-json": "^2.0.0",
