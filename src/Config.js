@@ -3,9 +3,9 @@
 
 
 var Search = /* module */[
-  /* appId */"B1AVN0IGTU",
-  /* apiKey */"c7a3475a8567971cb7510b422d9f37ad",
-  /* packageIndex */"redex-packages"
+  /* appId */"NSSP00E9NN",
+  /* apiKey */"865b2e3bf9dc5bc41e5456eb49b9a471",
+  /* packageIndex */"rholang-packages"
 ];
 
 function titleTemplate(title) {
