@@ -22,7 +22,6 @@
     "fetch": "npm run update-sources && fetch_published && fetch_unpublished",
     "update-search-index": "update_search_index",
     "deploy": "gh-pages -b master -d public",
-    "docu-build": "docusaurus-build",
     "everything": "npm run fetch && npm run build && npm run deploy"
   },
   "dependencies": {
