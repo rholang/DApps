@@ -14,6 +14,7 @@
   "main": "n/a",
   "scripts": {
     "start": "bsb -make-world -w",
+    "start2": "bsb -make-world && gatsby develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "test": "validate_sources",

@@ -2,6 +2,7 @@ open Vrroom;
 module Styles = TopListStyles;
 
 let component = ReasonReact.statelessComponent("TopList");
+
 let make = (~packages, ~value, _:childless) => {
   ...component,
   render: _self =>
@@ -9,6 +10,7 @@ let make = (~packages, ~value, _:childless) => {
       ...(package =>
         <div key=package##name className=(Styles.root |> TypedGlamor.toString)>
           <div>
+          
             <Link to_=package##slug className=(Styles.name |> TypedGlamor.toString)>
               {package##name |> text}
             </Link>
