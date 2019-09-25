@@ -17,6 +17,7 @@
     "start2": "bsb -make-world && gatsby develop",
     "build": "bsb -make-world && gatsby build",
     "develop": "gatsby develop",
+    "serve": "gatsby serve",
     "test": "validate_sources",
     "clean": "rm -rf data/generated",
     "update-sources": "git submodule update --remote && validate_sources",
