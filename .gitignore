@@ -11,3 +11,4 @@ lib/
 .merlin
 .bsb.lock
 data/generated
+gh-pages
