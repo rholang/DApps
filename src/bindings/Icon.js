@@ -3,10 +3,10 @@
 
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
-var Fa = require("react-icons/lib/fa");
-var Go = require("react-icons/lib/go");
-var Io = require("react-icons/lib/io");
-var Md = require("react-icons/lib/md");
+var Fa = require("react-icons/fa");
+var Go = require("react-icons/go");
+var Io = require("react-icons/io");
+var Md = require("react-icons/md");
 
 function Icon(Ext) {
   var make = function (className, children) {
