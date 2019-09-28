@@ -30,7 +30,7 @@ function make(packages, value, _) {
                                 return React.createElement("div", {
                                             key: $$package.name,
                                             className: TypedGlamor.toString(TopListStyles.root)
-                                          }, React.createElement("div", undefined, ReasonReact.element(/* None */0, /* None */0, Link.make($$package.slug, /* Some */[TypedGlamor.toString(TopListStyles.name)], /* None */0, /* array */[Vrroom.text($$package.name)])), React.createElement("span", {
+                                          }, React.createElement("div", undefined, ReasonReact.element(/* None */0, /* None */0, Link.make("/package/" + $$package.name, /* Some */[TypedGlamor.toString(TopListStyles.name)], /* None */0, /* array */[Vrroom.text($$package.name)])), React.createElement("span", {
                                                     className: TypedGlamor.toString(TopListStyles.version)
                                                   }, Vrroom.text($$package.version))), React.createElement("div", undefined, value >= 500154939 ? React.createElement("div", {
                                                       className: TypedGlamor.toString(TopListStyles.updated)

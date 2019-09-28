@@ -96,7 +96,7 @@ function make(data, _) {
                                       className: TypedGlamor.toString(PackageStyles.updated)
                                     }, ReasonReact.element(/* None */0, /* None */0, TimeAgo.make($$package.updated, /* array */[])))), React.createElement("div", {
                                   className: TypedGlamor.toString(PackageStyles.title)
-                                }, ReasonReact.element(/* None */0, /* None */0, Link.make($$package.slug, /* Some */[TypedGlamor.toString(PackageStyles.name)], /* None */0, /* array */[Vrroom.text($$package.name)])), ReasonReact.element(/* None */0, /* None */0, Version.make($$package.version, $$package.type === "published", /* array */[])), ReasonReact.element(/* None */0, /* None */0, Platforms.make($$package.platforms, /* array */[]))), React.createElement("div", {
+                                }, ReasonReact.element(/* None */0, /* None */0, Link.make("/package/" + $$package.name, /* Some */[TypedGlamor.toString(PackageStyles.name)], /* None */0, /* array */[Vrroom.text($$package.name)])), ReasonReact.element(/* None */0, /* None */0, Version.make($$package.version, $$package.type === "published", /* array */[])), ReasonReact.element(/* None */0, /* None */0, Platforms.make($$package.platforms, /* array */[]))), React.createElement("div", {
                                   className: TypedGlamor.toString(PackageStyles.descLine)
                                 }, ReasonReact.element(/* None */0, /* None */0, Flags.make($$package, /* Some */[true], /* array */[])), React.createElement("span", {
                                       className: TypedGlamor.toString(PackageStyles.description)

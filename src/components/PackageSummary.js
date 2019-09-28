@@ -38,7 +38,7 @@ function make($$package, _) {
                           className: TypedGlamor.toString(PackageSummaryStyles.root($$package.flags.length > 0))
                         }, React.createElement("header", {
                               className: TypedGlamor.toString(PackageSummaryStyles.header)
-                            }, ReasonReact.element(/* None */0, /* None */0, Link.make($$package.slug, /* Some */[TypedGlamor.toString(PackageSummaryStyles.name)], /* None */0, /* array */[Vrroom.text($$package.name)])), ReasonReact.element(/* None */0, /* None */0, Version.make($$package.version, $$package.type === "published", /* array */[])), ReasonReact.element(/* None */0, /* None */0, Platforms.make($$package.platforms, /* array */[])), React.createElement("div", {
+                            }, ReasonReact.element(/* None */0, /* None */0, Link.make("/package/" + $$package.name, /* Some */[TypedGlamor.toString(PackageSummaryStyles.name)], /* None */0, /* array */[Vrroom.text($$package.name)])), ReasonReact.element(/* None */0, /* None */0, Version.make($$package.version, $$package.type === "published", /* array */[])), ReasonReact.element(/* None */0, /* None */0, Platforms.make($$package.platforms, /* array */[])), React.createElement("div", {
                                   className: TypedGlamor.toString(PackageSummaryStyles.props)
                                 }, React.createElement("span", {
                                       className: TypedGlamor.toString(PackageSummaryStyles.stars)

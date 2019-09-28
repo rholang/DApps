@@ -51,7 +51,7 @@ let make = (~data, _:childless) => {
 
         <div className=(Styles.title |> TypedGlamor.toString)>
           /*<span className=Styles.owner> {"package" |> text} </span>*/
-          <Link to_=package##slug className=(Styles.name |> TypedGlamor.toString)>
+          <Link to_={"/package/" ++ package##name} className=(Styles.name |> TypedGlamor.toString)>
             {package##name |> text}
           </Link>
 

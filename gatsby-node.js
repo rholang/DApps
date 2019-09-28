@@ -185,6 +185,7 @@ exports.createPages = async ({ graphql, boundActionCreators: { createPage, creat
         allPackages {
           edges {
             node {
+              name
               id
               slug
             }
@@ -194,15 +195,15 @@ exports.createPages = async ({ graphql, boundActionCreators: { createPage, creat
     `);
     packages.data.allPackages.edges.map(({ node }) => {
       createPage({
-        path: node.slug,
+        path: "/package/" + node.name,
         component: path.resolve(`./src/templates/Package.js`),
         context: {
           id: node.id
         },
       });
       createRedirect({
-        fromPath: path.join("/package", decodeURIComponent(node.id)),
-        toPath: node.slug,
+        fromPath: "/package/" + node.name,
+        toPath: node.name,
         isPermananet: true,
         redirectInbrowser: true
       });
