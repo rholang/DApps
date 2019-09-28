@@ -11,9 +11,9 @@ let make = (~packages, ~value, _:childless) => {
         <div key=package##name className=(Styles.root |> TypedGlamor.toString)>
           <div>
           
-            /*<Link to_={"/package/" ++ package##name} className=(Styles.name |> TypedGlamor.toString)>
+            <Link to_={"/package/" ++ package##name} className=(Styles.name |> TypedGlamor.toString)>
               {package##name |> text}
-            </Link>*/
+            </Link>
             <span className=(Styles.version |> TypedGlamor.toString)> {package##version |> text} </span>
           </div>
           <div>

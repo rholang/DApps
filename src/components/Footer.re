@@ -13,7 +13,7 @@ let make = (~context, _:childless) => {
             <li> <a href="https://github.com/redex/redex.github.io"> ("Source Code Repository" |> text) </a> </li>
             <li> <a href="https://github.com/redex/data"> ("Package/Data Repository" |> text) </a> </li>
             <li> <a href="https://github.com/redex/redex.github.io/issues"> ("Support / Bug Tracker" |> text) </a> </li>
-            /*<li> <Link to_="/publish"> ("Submit a Package" |> text) </Link> </li>*/
+            <li> <Link to_="/publish"> ("Submit a Package" |> text) </Link> </li>
           </ul>
         </section>
 

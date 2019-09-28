@@ -274,27 +274,10 @@ exports.createPages = async ({ graphql, boundActionCreators: { createPage, creat
   }
 }
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === 'build-html') {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /dat.gui/,
-            use: loaders.null(),
-          },
-        ],
-      },
-    });
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /three/,
-            use: loaders.null(),
-          },
-        ],
-      },
-    });
-  }
+exports.modifyWebpackConfig = ({ config }) => {
+  config.loader("js", {
+    exclude: [/(node_modules|bower_components|bs-typed-css)/],
+  });
+
+  return config;
 };
