@@ -17,14 +17,15 @@ let make = (~data, _:childless) => {
       <SearchBox focusOnMount=true />
 
       <div className=(Styles.keywords |> TypedGlamor.toString)>
-        <Control.Map items=(data##keywords##group |> sort)>
-          ...(keyword =>
+        /*<Control.Map items=(data##keywords##group |> sort)>
+          
             <Link key=keyword##name to_=("/keyword/" ++ keyword##name)>
               <span className="label"> {keyword##name |> text} </span>
               <span className="count"> {string_of_int(keyword##count) |> text} </span>
             </Link>
-          )
-        </Control.Map>
+            
+          
+        </Control.Map>*/
       </div>
 
       <div className=(Styles.lists |> TypedGlamor.toString)>

@@ -16,17 +16,17 @@ let make = (~children, _:childless) => {
       <div className=(Styles.header |> TypedGlamor.toString)>
         <div className=(CommonStyles.widthContainer |> TypedGlamor.toString)>
           <SearchBox />
-          <Link to_="/" className=(Styles.title |> TypedGlamor.toString)>
+          /*<Link to_="/" className=(Styles.title |> TypedGlamor.toString)>
             <svg className=(Styles.logo |> TypedGlamor.toString)>
               /* NOTE: xlink stuff needed for safari */
               <use href="/logo.svg#logo" xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/logo.svg#logo"/>
             </svg>
-          </Link>
+          </Link>*/
         </div>
       </div>
 
       <div className=(CommonStyles.widthContainer |> TypedGlamor.toString)>
-        (children())
+        (children)
       </div>
 
       <Footer context=`Index />

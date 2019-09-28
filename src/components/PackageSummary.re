@@ -8,7 +8,7 @@ let make = (~package, _:childless) => {
 	render: _self =>
 		<div className=(Styles.root(~isFlagged=Array.length(package##flags) > 0) |> TypedGlamor.toString)>
 			<header className=(Styles.header |> TypedGlamor.toString)>
-				<Link className=(Styles.name |> TypedGlamor.toString) to_={"/package/" ++ package##name}> {package##name |> text} </Link>
+				/*<Link className=(Styles.name |> TypedGlamor.toString) to_={"/package/" ++ package##name}> {package##name |> text} </Link>*/
 				<Version version=package##version isPublished=(package##_type == "published") />
 				<Platforms platforms=package##platforms />
 

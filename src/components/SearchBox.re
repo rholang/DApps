@@ -65,7 +65,7 @@ let make = (~focusOnMount=false, _:childless) => {
     | SelectItem(package) =>
       ReasonReact.UpdateWithSideEffects(
         { ...state, query: "", results: [||], focused: None },
-        _self => Link.navigateTo(package##slug)
+        _self => ()/*Link.navigate(package##slug)*/
       )
 
     | KeyDown(key) =>

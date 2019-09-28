@@ -30,14 +30,14 @@ let make = (~children: unit => ReasonReact.reactElement, _:childless) => {
         </button>
         <div className=(CommonStyles.widthContainer |> TypedGlamor.toString)>
           <span className="left" />
-          <Link to_="/all"> ("All" |> text) </Link>
+         /* <Link to_="/all"> ("All" |> text) </Link>
           <Link to_="/category/binding"> ("Bindings" |> text) </Link>
           <Link to_="/category/library"> ("Libraries" |> text) </Link>
           <Link to_="/category/tool"> ("Tools" |> text) </Link>
           <Link to_="/category/boilerplate"> ("Boilerplate" |> text) </Link>
           <span className="right">
             <Link className=(Styles.publishLink |> TypedGlamor.toString) to_="/publish"> ("Submit a Package" |> text) </Link>
-          </span>
+          </span>*/
         </div>
       </nav>
 
@@ -53,9 +53,9 @@ let make = (~children: unit => ReasonReact.reactElement, _:childless) => {
         </div>
       </div>
 
-      <div className=(CommonStyles.widthContainer |> TypedGlamor.toString)>
-        (children())
-      </div>
+      /*<div className=(CommonStyles.widthContainer |> TypedGlamor.toString)>
+        children
+      </div>*/
 
       <Footer context=`Front />
 

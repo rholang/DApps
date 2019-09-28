@@ -27,10 +27,12 @@ module Tag = {
   let make = (~name, ~url, ~customStyle="", _:childless) => {
     ...component,
 
-    render: _self =>
-      <Link to_=url className=((style |> TypedGlamor.toString) ++ " " ++ customStyle)>
+    render: _self => 
+      /*<Link to=url className=((style |> TypedGlamor.toString) ++ " " ++ customStyle)>
         {name |> text}
-      </Link>
+      </Link>*/
+      <h2> {"Recent releases" |> text} </h2>
+      
   }
 };
 
