@@ -12,3 +12,4 @@ lib/
 .bsb.lock
 data/generated
 gh-pages
+.git
