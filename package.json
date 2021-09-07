@@ -47,7 +47,7 @@
     "react-icons": "^3.7.0",
     "react-timeago": "^4.4.0",
     "remark": "^9.0.0",
-    "remark-html": "^7.0.0",
+    "remark-html": "^13.0.2",
     "vrroom": "github:glennsl/vrroom"
   },
   "devDependencies": {
